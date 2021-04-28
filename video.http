@@ -1,0 +1,26 @@
+@api =http://localhost:3000/api
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/6080a1d489fdbd393c59c7e5
+
+###
+POST  {{api}}/videos
+Content-Type: application/json
+
+{
+    "url":"https://www.youtube.com/watch?v=_RZ-T6TxP7wasdw",
+    "title":"MearStack",
+    "description":"this is a fast video"
+}
+###
+DELETE {{api}}/videos/6080a1d489fdbd393c59c7e5
+
+###
+PUT {{api}}/videos/6080a1d489fdbd393c59c7e6
+Content-Type: application/json
+
+{
+    "title":"Docket is now already"
+}
